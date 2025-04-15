@@ -1,37 +1,29 @@
 <!--
     =====================================
     generator=datazen
-    version=3.1.4
-    hash=49b054de642b258099743a2c9ee102ec
+    version=3.2.1
+    hash=acb422acbc8f92ccf6c4cc577631a52d
     =====================================
 -->
 
-# setuptools-wrapper ([0.2.7](https://pypi.org/project/setuptools-wrapper/))
+# setuptools-wrapper ([0.2.8](https://pypi.org/project/setuptools-wrapper/))
 
 [![python](https://img.shields.io/pypi/pyversions/setuptools-wrapper.svg)](https://pypi.org/project/setuptools-wrapper/)
-![Build Status](https://github.com/vkottler/setuptools-wrapper/workflows/Python%20Package/badge.svg)
-[![codecov](https://codecov.io/gh/vkottler/setuptools-wrapper/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/github/vkottler/setuptools-wrapper)
+![Build Status](https://github.com/libre-embedded/setuptools-wrapper/workflows/Python%20Package/badge.svg)
+[![codecov](https://codecov.io/gh/libre-embedded/setuptools-wrapper/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/github/libre-embedded/setuptools-wrapper)
 ![PyPI - Status](https://img.shields.io/pypi/status/setuptools-wrapper)
 ![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/setuptools-wrapper)
 
 *A simple interface to setuptools's setup function.*
 
-## Documentation
-
-### Generated
-
-* By [sphinx-apidoc](https://vkottler.github.io/python/sphinx/setuptools-wrapper)
-(What's [`sphinx-apidoc`](https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html)?)
-* By [pydoc](https://vkottler.github.io/python/pydoc/setuptools_wrapper.html)
-(What's [`pydoc`](https://docs.python.org/3/library/pydoc.html)?)
+([interface documentation](https://libre-embedded.github.io/python/setuptools-wrapper))
 
 ## Python Version Support
 
 This package is tested with the following Python minor versions:
 
-* [`python3.10`](https://docs.python.org/3.10/)
-* [`python3.11`](https://docs.python.org/3.11/)
 * [`python3.12`](https://docs.python.org/3.12/)
+* [`python3.13`](https://docs.python.org/3.13/)
 
 ## Platform Support
 

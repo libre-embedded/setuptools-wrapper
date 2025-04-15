@@ -1,7 +1,7 @@
 # =====================================
 # generator=datazen
-# version=3.1.4
-# hash=1668f8d26ad800f736638e7eb757119a
+# version=3.2.1
+# hash=03ae76005fb2fd1fc4c78694d143fdc7
 # =====================================
 
 """
@@ -17,9 +17,9 @@ except (ImportError, ModuleNotFoundError):
     from setuptools_wrapper_bootstrap.setup import setup  # type: ignore
 
 author_info = {
-    "name": "Vaughn Kottler",
-    "email": "vaughnkottler@gmail.com",
-    "username": "vkottler",
+    "name": "Libre Embedded",
+    "email": "vaughn@libre-embedded.com",
+    "username": "libre-embedded",
 }
 pkg_info = {
     "name": PKG_NAME,
@@ -27,9 +27,8 @@ pkg_info = {
     "version": VERSION,
     "description": DESCRIPTION,
     "versions": [
-        "3.10",
-        "3.11",
         "3.12",
+        "3.13",
     ],
 }
 setup(
