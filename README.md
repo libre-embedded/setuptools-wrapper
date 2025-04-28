@@ -1,12 +1,12 @@
 <!--
     =====================================
     generator=datazen
-    version=3.2.1
-    hash=acb422acbc8f92ccf6c4cc577631a52d
+    version=3.2.3
+    hash=7bb1ed667183f1eb08f63838c7d1c3c3
     =====================================
 -->
 
-# setuptools-wrapper ([0.2.8](https://pypi.org/project/setuptools-wrapper/))
+# setuptools-wrapper ([0.2.9](https://pypi.org/project/setuptools-wrapper/))
 
 [![python](https://img.shields.io/pypi/pyversions/setuptools-wrapper.svg)](https://pypi.org/project/setuptools-wrapper/)
 ![Build Status](https://github.com/libre-embedded/setuptools-wrapper/workflows/Python%20Package/badge.svg)
@@ -15,6 +15,8 @@
 ![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/setuptools-wrapper)
 
 *A simple interface to setuptools's setup function.*
+
+Consider [sponsoring development](https://github.com/sponsors/libre-embedded).
 
 ([interface documentation](https://libre-embedded.github.io/python/setuptools-wrapper))
 
