@@ -3,10 +3,10 @@ requires = ["setuptools", "wheel", "trove-classifiers"]
 
 [project]
 name = "setuptools-wrapper"
-version = "0.2.9"
+version = "0.2.10"
 description = "A simple interface to setuptools's setup function."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [
@@ -17,8 +17,8 @@ maintainers = [
 ]
 classifiers = [
   "Topic :: Software Development :: Build Tools",
-  "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Operating System :: Microsoft :: Windows",
   "Operating System :: MacOS",
   "Operating System :: POSIX :: Linux",

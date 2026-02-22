@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=7bb1ed667183f1eb08f63838c7d1c3c3
+    hash=4557afcebd9189a154d1e027ac9eb719
     =====================================
 -->
 
-# setuptools-wrapper ([0.2.9](https://pypi.org/project/setuptools-wrapper/))
+# setuptools-wrapper ([0.2.10](https://pypi.org/project/setuptools-wrapper/))
 
 [![python](https://img.shields.io/pypi/pyversions/setuptools-wrapper.svg)](https://pypi.org/project/setuptools-wrapper/)
 ![Build Status](https://github.com/libre-embedded/setuptools-wrapper/workflows/Python%20Package/badge.svg)
@@ -24,8 +24,8 @@ Consider [sponsoring development](https://github.com/sponsors/libre-embedded).
 
 This package is tested with the following Python minor versions:
 
-* [`python3.12`](https://docs.python.org/3.12/)
 * [`python3.13`](https://docs.python.org/3.13/)
+* [`python3.14`](https://docs.python.org/3.14/)
 
 ## Platform Support
 
