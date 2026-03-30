@@ -8,7 +8,7 @@ import os
 import shutil
 from sys import platform, version_info
 import tempfile
-from typing import Any, Dict, Iterator, List, Set, Union, cast
+from typing import Any, Iterator, cast
 
 # third-party
 import setuptools
@@ -82,7 +82,7 @@ def default_requirements_file(directory: str) -> str:
     return os.path.join(directory, "requirements.txt")
 
 
-def get_requirements(reqs_filename: str) -> Set[str]:
+def get_requirements(reqs_filename: str) -> set[str]:
     """Get a package's requirements based on its requirements file."""
 
     try:
@@ -92,7 +92,7 @@ def get_requirements(reqs_filename: str) -> Set[str]:
         return set()
 
 
-def get_data_files(pkg_name: str, data_dir: str = "data") -> List[str]:
+def get_data_files(pkg_name: str, data_dir: str = "data") -> list[str]:
     """
     Get the non-code sources under a package directory's data directory.
     """
@@ -100,8 +100,9 @@ def get_data_files(pkg_name: str, data_dir: str = "data") -> List[str]:
     data_files = []
     for root, _, files in os.walk(os.path.join(pkg_name, data_dir)):
         for fname in files:
-            rel_name = os.path.join(root, fname).replace(pkg_name + os.sep, "")
-            data_files.append(rel_name)
+            data_files.append(
+                os.path.join(root, fname).replace(pkg_name + os.sep, "", 1)
+            )
 
     return data_files
 
@@ -190,10 +191,10 @@ class PythonVersionCompare:
         return self.cmp(other) >= 0
 
 
-def process_requirements(requirements: Set[str]) -> Set[str]:
+def process_requirements(requirements: set[str]) -> set[str]:
     """Process conditional statements in requirement declarations."""
 
-    new_reqs: Set[str] = set()
+    new_reqs: set[str] = set()
 
     for requirement in requirements:
         parts = [x.strip() for x in requirement.split(";")]
@@ -214,11 +215,11 @@ def process_requirements(requirements: Set[str]) -> Set[str]:
 
 # pylint: disable=too-many-arguments
 def setup(
-    pkg_info: Dict[str, Any],
-    author_info: Dict[str, str],
+    pkg_info: dict[str, Any],
+    author_info: dict[str, str],
     url_override: str = None,
-    classifiers_override: List[str] = None,
-    requirements: Set[str] = None,
+    classifiers_override: list[str] = None,
+    requirements: set[str] = None,
     **kwargs,
 ) -> None:
     """
@@ -226,7 +227,7 @@ def setup(
     about certain aspects of a package's structure.
     """
 
-    defaults: Dict[str, Union[str, List[str], Set[str]]] = {
+    defaults: dict[str, str | list[str] | set[str]] = {
         "url_override": (
             f"https://github.com/{author_info['username']}/"
             f"{pkg_info['name']}"
@@ -243,7 +244,7 @@ def setup(
         str, defaults["url_override"] if url_override is None else url_override
     )
     classifiers_override = cast(
-        List[str],
+        list[str],
         (
             defaults["classifiers_override"]
             if classifiers_override is None
@@ -251,7 +252,7 @@ def setup(
         ),
     )
     requirements = cast(
-        Set[str],
+        set[str],
         defaults["requirements"] if requirements is None else requirements,
     )
 

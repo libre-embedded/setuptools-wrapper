@@ -1,12 +1,12 @@
 <!--
     =====================================
     generator=datazen
-    version=3.2.3
-    hash=09e31c028b355e94b70a8ba80dc3250c
+    version=3.2.4
+    hash=93f6b037359834b0d1fcf7d3bfb1bc5e
     =====================================
 -->
 
-# setuptools-wrapper ([0.2.11](https://pypi.org/project/setuptools-wrapper/))
+# setuptools-wrapper ([0.3.0](https://pypi.org/project/setuptools-wrapper/))
 
 [![python](https://img.shields.io/pypi/pyversions/setuptools-wrapper.svg)](https://pypi.org/project/setuptools-wrapper/)
 ![Build Status](https://github.com/libre-embedded/setuptools-wrapper/workflows/Python%20Package/badge.svg)
