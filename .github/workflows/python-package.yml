@@ -42,7 +42,7 @@ jobs:
 
       - run: mk python-sa-types
 
-      - run: mk docs version=0.2.11
+      - run: mk docs version=0.3.0
         if: |
           matrix.python-version == '3.14'
           && matrix.system == 'ubuntu-latest'
@@ -74,7 +74,7 @@ jobs:
 
       - run: |
           mk python-release owner=libre-embedded \
-                            repo=setuptools-wrapper version=0.2.11
+                            repo=setuptools-wrapper version=0.3.0
         if: |
           matrix.python-version == '3.14'
           && matrix.system == 'ubuntu-latest'
